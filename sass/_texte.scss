@@ -1,0 +1,41 @@
+
+.text{
+    margin: 0%;
+    width: auto;
+}
+
+.text__h2{
+    font-weight: 700;
+    color: #000000;
+    font-size: 24px;
+    width: 80%;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+#intro .text{
+    padding: 0%;
+    text-align: center;
+}
+
+.text__p{
+    color: #353535;
+    font-size: 18px;
+    line-height: 21.09px;
+    font-weight: 300;
+}
+
+.card-fonction p{
+    color: $color-backgrounds;
+    font-weight: 500;
+    font-size: 14.8px;
+}
+
+.text__btn{
+    color: $color-white;
+    font-weight: 500;
+}
+
+footer .text{
+    color: $color-white;
+}

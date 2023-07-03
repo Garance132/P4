@@ -1,0 +1,66 @@
+html,
+body {
+    width: 100%;
+    margin: 0%;
+    font-family: $font-stack;
+    color: $color-txt;
+    background-color: #F6F6F6;
+}
+
+#logo {
+    @extend %flex;
+    height: 63px;
+    background-color: $color-white;
+    margin: 0%;
+}
+
+.end-header {
+    @extend %flex;
+    background: $color-grey ;
+    gap: 17px;
+    height: 50px;
+}
+
+#intro {
+    @extend %flex;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding:0px 42px;
+    margin: 50px 0px;
+    
+
+}
+
+#fonctionnement {
+    @extend %flex;
+    flex-direction: column;
+    background: $color-white;
+    padding: 50px 0px;
+
+}
+
+#restaurants {
+    @extend %flex;
+    flex-direction: column;
+    margin: 50PX 0px;
+}
+
+footer{
+    background-color: $color-darkgrey;
+    color: $color-white;
+    
+    .liens{
+        gap: 7px;
+    }
+
+    img{
+        width: 139px;
+        filter: brightness(0) invert(1) hue-rotate(180deg) grayscale(100%);
+        padding: 22px 25px;
+    }
+
+    i{
+        padding: 2px;
+    }
+}

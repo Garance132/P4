@@ -1,0 +1,15 @@
+$color-btn: linear-gradient (rgb #9356DC, #FF79DA);
+$color-txt: #000000;
+$color-new: #99E2D0;
+$color-ellipse: #9356DC;
+$color-backgrounds: #F6F6F6;
+$color-darkgrey:#353535;
+$color-white: #ffffff;
+$color-grey: #eaeaea;
+$font-stack: 'Roboto', sans-sherif;
+
+%flex {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
