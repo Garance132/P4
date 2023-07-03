@@ -25,6 +25,7 @@ ul{
 }
 
 #fonctionnement p{
+
     @extend %flex;
     width: 24px;
     height: 24px;
@@ -33,21 +34,30 @@ ul{
 }
 
 i{
+    size: 16px;
     color: #7e7e7e;
     width: 16px;
     height: 15.92px;
+    margin: 0px 16px;
 }
 
 li {
     @extend %flex;
     list-style: none;
 
-    button {
+    button{
+        font-size: 16px;
+        padding-right: 65px;
         background: #f6f6f6;
         width: 322.49px;
         height: 72.38px;
         border-radius: 20px;
         margin: 15px 0px;
+    }
+
+    .fa-xs {
+        padding-left: 8px;
+        font-size: 16px;
     }
 }
 
@@ -71,6 +81,8 @@ article {
     }
 
     .card-content {
+        @extend %flex;
+        justify-content: space-between;
         height: 87px;
         background-color: #ffffff;
     }
@@ -79,7 +91,9 @@ article {
         margin: 15px 8px;
     }
 
-    .like{
-        margin-right: 20px;
+    i{
+        font-size: x-large ;
+        border: 1px;
+        margin: 15px 15px 30px;
     }
 }

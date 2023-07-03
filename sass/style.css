@@ -1,4 +1,4 @@
-li, #fonctionnement p, #restaurants, #fonctionnement, #intro, .end-header, #logo {
+article .card-content, li, #fonctionnement p, #restaurants, #fonctionnement, #intro, .end-header, #logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +51,9 @@ footer {
 footer .liens {
   gap: 7px;
 }
+footer .liens-footer {
+  display: flex;
+}
 footer img {
   width: 139px;
   filter: brightness(0) invert(1) hue-rotate(180deg) grayscale(100%);
@@ -95,13 +98,14 @@ footer i {
 .text__btn {
   color: #ffffff;
   font-weight: 500;
+  font-size: 16px;
 }
 
 footer .text {
   color: #ffffff;
 }
 
-li, #fonctionnement p, #logo, .end-header, #intro, #fonctionnement, #restaurants {
+article .card-content, li, #fonctionnement p, #logo, .end-header, #intro, #fonctionnement, #restaurants {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,20 +138,28 @@ ul {
 }
 
 i {
+  size: 16px;
   color: #7e7e7e;
   width: 16px;
   height: 15.92px;
+  margin: 0px 16px;
 }
 
 li {
   list-style: none;
 }
 li button {
+  font-size: 16px;
+  padding-right: 65px;
   background: #f6f6f6;
   width: 322.49px;
   height: 72.38px;
   border-radius: 20px;
   margin: 15px 0px;
+}
+li .fa-xs {
+  padding-left: 8px;
+  font-size: 16px;
 }
 
 #resto-card {
@@ -169,12 +181,36 @@ article img {
   border-radius: 15px 15px 0px 0px;
 }
 article .card-content {
+  justify-content: space-between;
   height: 87px;
   background-color: #ffffff;
 }
 article .txt-card {
   margin: 15px 8px;
 }
-article .like {
-  margin-right: 20px;
+article i {
+  font-size: x-large;
+  border: 1px;
+  margin: 15px 15px 30px;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  height: 200px;
+}
+footer .liens {
+  gap: 7px;
+  margin-left: 20px;
+}
+footer .liens-footer {
+  display: flex;
+}
+footer img {
+  width: 139px;
+  filter: brightness(0) invert(1) hue-rotate(180deg) grayscale(100%);
+  padding: 22px 25px;
+}
+footer i {
+  padding: 2px;
 }/*# sourceMappingURL=style.css.map */

@@ -54,6 +54,10 @@ footer{
         gap: 7px;
     }
 
+    .liens-footer{
+        display: flex;
+    }
+
     img{
         width: 139px;
         filter: brightness(0) invert(1) hue-rotate(180deg) grayscale(100%);
