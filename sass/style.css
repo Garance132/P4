@@ -1,13 +1,48 @@
-article .card-content, li, #fonctionnement p, #restaurants, #fonctionnement, #intro, .end-header, #logo {
+.card .card-content, li.card-fonction, #fonctionnement ul p, #intro .text, .text__resto, #restaurants, #fonctionnement, #intro, .end-header, #logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.text__h2 {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  size: 24px;
+  color: black;
+}
+
+#main-resto h3, .text_fonction {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  size: 16px;
+  color: black;
+}
+
+h3 {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  size: 18px;
+  color: black;
+}
+
+#main-resto h2 {
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  size: 16px;
+  color: black;
+}
+
+.text__prix {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  size: 15.04px;
+  color: black;
+}
+
 html,
 body {
-  width: 100%;
-  margin: 0%;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-sherif;
   color: #000000;
   background-color: #F6F6F6;
@@ -17,19 +52,24 @@ body {
   height: 63px;
   background-color: #ffffff;
   margin: 0%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .end-header {
   background: #eaeaea;
-  gap: 17px;
+  color: #000000;
   height: 50px;
+  padding-right: 10%;
+}
+.end-header i {
+  color: #000000;
 }
 
 #intro {
   flex-direction: column;
   height: auto;
   gap: 15px;
-  padding: 0px 42px;
+  padding: 0px 50px 0px 50px;
   margin: 50px 0px;
 }
 
@@ -44,40 +84,24 @@ body {
   margin: 50PX 0px;
 }
 
-footer {
-  background-color: #353535;
-  color: #ffffff;
-}
-footer .liens {
-  gap: 7px;
-}
-footer .liens-footer {
-  display: flex;
-}
-footer img {
-  width: 139px;
-  filter: brightness(0) invert(1) hue-rotate(180deg) grayscale(100%);
-  padding: 22px 25px;
-}
-footer i {
-  padding: 2px;
-}
-
 .text {
   margin: 0%;
   width: auto;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .text__h2 {
-  font-weight: 700;
-  color: #000000;
-  font-size: 24px;
   width: 80%;
-  margin: 0px;
-  padding-bottom: 30px;
+  margin: 0px 30px 0px 0px;
+  padding-bottom: 15px;
 }
 
-#intro .text {
+#intro .text, .text__resto {
   padding: 0%;
   text-align: center;
 }
@@ -101,40 +125,53 @@ footer i {
   font-size: 16px;
 }
 
-footer .text {
+footer .liens {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer .liens div {
+  display: flex;
+}
+footer .liens i {
+  margin: 0px 16px 0px 0px;
+}
+footer .liens .text {
   color: #ffffff;
 }
 
-article .card-content, li, #fonctionnement p, #logo, .end-header, #intro, #fonctionnement, #restaurants {
+.card .card-content, li.card-fonction, #fonctionnement ul p, #logo, .end-header, #intro, #fonctionnement, #restaurants, #intro .text, .text__resto {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-button {
-  width: 218px;
-  height: 50px;
+.btn__intro {
   border: none;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  width: 75%;
+  height: 50px;
 }
 
-#intro button {
-  margin-top: 20px;
-  width: 60%;
+.btn__resto {
+  margin: 40px 94.5px 10px;
+  width: 45%;
 }
 
 ul {
-  margin: 0%;
   padding: 0%;
+  margin: 26px 20px 0px 20px;
 }
 
-#fonctionnement p {
+#fonctionnement ul p {
   width: 24px;
   height: 24px;
   background-color: #9356DC;
   border-radius: 50%;
+  position: absolute;
+  left: -10px;
 }
 
 i {
@@ -145,19 +182,26 @@ i {
   margin: 0px 16px;
 }
 
-li {
+li.card-fonction {
+  margin-bottom: 24.92px;
   list-style: none;
-}
-li button {
-  font-size: 16px;
-  padding-right: 65px;
-  background: #f6f6f6;
-  width: 322.49px;
+  position: relative;
+  width: 335px;
   height: 72.38px;
+  background: #f6f6f6;
   border-radius: 20px;
-  margin: 15px 0px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 0px 37px 0px 0px;
 }
-li .fa-xs {
+li.card-fonction div {
+  font-size: 16px;
+  margin: 0;
+}
+li.card-fonction p {
+  padding: 0;
+  margin: 0;
+}
+li.card-fonction .fa-xs {
   padding-left: 8px;
   font-size: 16px;
 }
@@ -168,27 +212,27 @@ li .fa-xs {
   gap: 30px;
 }
 
-article {
+.card {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 251px;
   border-radius: 15px;
 }
-article img {
+.card img {
   width: 346px;
   height: 164px;
   border-radius: 15px 15px 0px 0px;
 }
-article .card-content {
+.card .card-content {
   justify-content: space-between;
   height: 87px;
   background-color: #ffffff;
 }
-article .txt-card {
+.card .txt-card {
   margin: 15px 8px;
 }
-article i {
+.card i {
   font-size: x-large;
   border: 1px;
   margin: 15px 15px 30px;
@@ -213,4 +257,73 @@ footer img {
 }
 footer i {
   padding: 2px;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+}
+
+#header-logo {
+  height: 63px;
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  margin-left: 17px;
+}
+
+.fa-arrow-left {
+  color: black;
+}
+
+.bar {
+  border-top: 3px solid #99E2D0;
+  width: 40px;
+  margin-left: 13px;
+  margin-bottom: 12px;
+}
+
+#resto-img {
+  width: 100%;
+  height: 275px;
+}
+
+#main-resto {
+  position: relative;
+  background-color: #F6F6F6;
+  margin-top: -30px;
+  border-radius: 40px 40px 0px 0px;
+  padding: 30px 12px;
+}
+#main-resto article {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 13.5px 15px;
+  gap: 5px;
+  margin-bottom: 12px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+#main-resto article div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#main-resto h2 {
+  margin-left: 13px;
+}
+
+#title-resto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "shrikhand", sans-serif;
+  margin: 0px 0px 40px 17px;
+}
+
+#end-card {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

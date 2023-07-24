@@ -1,6 +1,75 @@
-html,body{
+html,
+body {
     width: 100%;
-    margin: 0cap;
+    margin: 0;
+    padding: 0%;
 }
 
-.text
+#header-logo {
+    height: 63px;
+    display: flex;
+    align-items: center;
+gap: 41px;
+margin-left: 17px;
+}
+
+.fa-arrow-left{
+    color: black;
+ }
+
+
+.bar {
+    border-top: 3px solid $color-new;
+    width: 40px;
+    margin-left: 13px;
+    margin-bottom: 12px;
+}
+
+#resto-img {
+    width: 100%;
+    height: 275px;
+}
+
+#main-resto {
+    position: relative;
+    background-color: $color-backgrounds;
+    margin-top: -30px;
+    border-radius: 40px 40px 0px 0px;
+    padding: 30px 12px;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-white;
+        border-radius: 15px;
+        padding: 13.5px 15px ;
+        gap: 5px;
+        margin-bottom: 12px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    }
+    
+    
+    h2 {
+        margin-left: 13px;
+    }
+}
+
+#title-resto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'shrikhand', sans-serif;
+    margin: 0px 0px 40px 17px;
+}
+
+
+#end-card {
+    margin-bottom: 0;
+}

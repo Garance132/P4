@@ -2,18 +2,23 @@
 .text{
     margin: 0%;
     width: auto;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .text__h2{
-    font-weight: 700;
-    color: #000000;
-    font-size: 24px;
+    @extend %police-h2;
     width: 80%;
-    margin: 0px;
-    padding-bottom: 30px;
+    margin: 0px 30px 0px 0px;
+    padding-bottom: 15px;
 }
 
-#intro .text{
+#intro .text, .text__resto{
+    @extend %flex;
     padding: 0%;
     text-align: center;
 }
@@ -31,12 +36,48 @@
     font-size: 14.8px;
 }
 
+.text_fonction{
+   @extend %police-fonction;
+}
+
 .text__btn{
     color: $color-white;
     font-weight: 500;
     font-size: 16px;
 }
 
-footer .text{
+footer .liens {
+ display: flex;
+ flex-direction: column;
+    gap: 7px;
+
+div{
+  display: flex;
+
+}
+
+  i{
+    margin: 0px 16px 0px 0px;
+  }
+
+.text{
     color: $color-white;
+}
+}
+
+h3{
+    @extend %police-h3
+}
+
+
+#main-resto h3{
+ @extend %police-fonction;
+}
+
+#main-resto h2{ 
+    @extend %h2-resto;
+}
+
+.text__prix{
+    @extend %police-prix;
 }

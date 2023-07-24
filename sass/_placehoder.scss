@@ -1,0 +1,41 @@
+%flex {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+%police-h2 {
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    size: 24px;
+    color: black;
+}
+
+%police-fonction{
+
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    size: 16px;
+    color: black;
+}
+
+%police-h3 {
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    size: 18px;
+    color: black;
+}
+
+%h2-resto{
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+    size: 16px;
+    color: black;
+}
+
+%police-prix{
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    size: 15.04px;
+    color: black;
+}
