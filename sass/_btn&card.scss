@@ -5,27 +5,36 @@
 }
 
 
-.btn__intro{
+.btn__intro {
     border: none;
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 25px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     width: 75%;
     height: 50px;
+
+    &:hover {
+        background: lighten ((#9356DC, #FF79DA), 5);
+        opacity: 0.75;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.50);
+        transition: opacity 250ms;
+    }
+
 }
 
 
-.btn__resto{
+
+.btn__resto {
     margin: 40px 94.5px 10px;
     width: 45%;
 }
 
-ul{
+ul {
     padding: 0%;
     margin: 26px 20px 0px 20px;
 }
 
-#fonctionnement ul p{
+#fonctionnement ul p {
 
     @extend %flex;
     width: 24px;
@@ -36,13 +45,13 @@ ul{
     left: -10px;
 }
 
-i{
+i {
     size: 16px;
     color: #7e7e7e;
-    width: 16px;
-    height: 15.92px;
     margin: 0px 16px;
 }
+
+
 
 li.card-fonction {
     @extend %flex;
@@ -50,19 +59,19 @@ li.card-fonction {
     list-style: none;
     position: relative;
     width: 335px;
-        height: 72.38px;
-        background: #f6f6f6;
-        border-radius: 20px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        padding: 0px 37px 0px 0px ;
+    height: 72.38px;
+    background: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    padding: 0px 37px 0px 0px;
 
 
-    div{
+    div {
         font-size: 16px;
         margin: 0;
     }
 
-    p{
+    p {
         padding: 0;
         margin: 0;
     }
@@ -71,12 +80,22 @@ li.card-fonction {
         padding-left: 8px;
         font-size: 16px;
     }
+
 }
 
-#resto-card{
+#resto-card {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @media screen and (min-width:1024px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 100px;
+    }
 }
 
 .card {
@@ -86,10 +105,20 @@ li.card-fonction {
     height: 251px;
     border-radius: 15px;
 
+    @media screen and (min-width:1024px) {
+            width:100%;
+            margin-bottom: -50px;
+    }
+
     img {
         width: 346px;
         height: 164px;
         border-radius: 15px 15px 0px 0px;
+
+
+        @media screen and (min-width:1024px) {
+            width:490px;
+    }
     }
 
     .card-content {
@@ -97,15 +126,27 @@ li.card-fonction {
         justify-content: space-between;
         height: 87px;
         background-color: #ffffff;
+        border-radius: 15px;
     }
 
-    .txt-card{
+    .txt-card {
         margin: 15px 8px;
     }
 
-    i{
-        font-size: x-large ;
+    i {
+        font-size: x-large;
         border: 1px;
         margin: 15px 15px 30px;
     }
 }
+
+@media screen and (min-width:1024px) {
+    #fonctionnement ul{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+
+

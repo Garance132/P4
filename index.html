@@ -7,13 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/ea11a8f2e0.js" crossorigin="anonymous" alt="fontawesome"></script>
     <title>ohmyfood</title>
 </head>
 
 <body>
+
+    <div class="loader-container">
+
+        <div class="lettre l1">C</div>
+        <div class="lettre l2">H</div>
+        <div class="lettre l3">A</div>
+        <div class="lettre l4">R</div>
+        <div class="lettre l5">G</div>
+        <div class="lettre l6">E</div>
+        <div class="lettre l7">M</div>
+        <div class="lettre l8">E</div>
+        <div class="lettre l9">N</div>
+        <div class="lettre l10">T</div>
+
+    </div>
+
 
     <header>
         <div>
@@ -32,7 +49,8 @@
             <h2 class="text text__h2">Réservez le menu qui vous convient</h2>
             <p class="text text__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
-            <div class="text btn__intro  text__btn">Explorer nos restaurants</div>
+            <div class="text btn__intro  text__btn">Explorer nos restaurants
+            </div>
         </section>
 
         <section id="fonctionnement">
@@ -79,8 +97,12 @@
                                 <h3 class="text text__h3">La palette du goût</h3>
                                 <p class="text text__p">Ménilmontant</p>
                             </div>
-                            <i class="fa-sharp fa-regular fa-heart like"></i>
-                             </div>
+                            <div class="heart">
+                                <input type="checkbox" id="coche-heart-1" name="coche-heart-1">
+                               <label for="coche-heart-1">
+                                <i class="fa-solid fa-heart coeur" id="coeur-plein"></i></label>
+                            </div>
+                        </div>
                     </article>
                 </a>
                 <a href="restaurant/enchantes.html">
@@ -92,9 +114,13 @@
                             <div class="txt-card">
                                 <h3 class="text text__h3">La note enchantée</h3>
                                 <p class="text text__p">Charonne</p>
+                            </div> 
+                            <div class="heart">
+                                <input type="checkbox" id="coche-heart-2" name="coche-heart-2">
+                               <label for="coche-heart-2">
+                                <i class="fa-solid fa-heart coeur" id="coeur-plein"></i></label>
                             </div>
-                            <i class="fa-sharp fa-regular fa-heart"></i>
-                            </div>
+                        </div>
                     </article>
                 </a>
                 <a href="restaurant/francaise.html">
@@ -107,8 +133,13 @@
                                 <h3 class="text text__h3">A la française</h3>
                                 <p class="text text__p">Cité Rouge</p>
                             </div>
-                            <i class="fa-sharp fa-regular fa-heart"></i>
+                            <div class="heart">
+                                <input type="checkbox" id="coche-heart-3" name="coche-heart-3">
+                               <label for="coche-heart-3">
+                                <i class="fa-solid fa-heart coeur" id="coeur-plein"></i></label>
                             </div>
+                           
+                        </div>
                     </article>
                 </a>
 
@@ -122,7 +153,11 @@
                                 <h3 class="text text__h3">Le délice des sens</h3>
                                 <p class="text text__p">Folie-Méricourt</p>
                             </div>
-                            <i class="fa-sharp fa-regular fa-heart"></i>
+                            <div class="heart">
+                                <input type="checkbox" id="coche-heart-4" name="coche-heart-4">
+                               <label for="coche-heart-4">
+                                <i class="fa-solid fa-heart coeur" id="coeur-plein"></i></label>
+                            </div>
                         </div>
                     </article>
                 </a>

@@ -1,5 +1,4 @@
-
-.text{
+.text {
     margin: 0%;
     width: auto;
     color: #000000;
@@ -10,74 +9,86 @@ a {
     color: #000000;
 }
 
-.text__h2{
+.text__h2 {
     @extend %police-h2;
     width: 80%;
     margin: 0px 30px 0px 0px;
     padding-bottom: 15px;
 }
 
-#intro .text, .text__resto{
+#intro .text,
+.text__resto {
     @extend %flex;
     padding: 0%;
     text-align: center;
 }
 
-.text__p{
+.text__p {
     color: #353535;
     font-size: 18px;
     line-height: 21.09px;
     font-weight: 300;
 }
 
-.card-fonction p{
+.card-fonction p {
     color: $color-backgrounds;
     font-weight: 500;
     font-size: 14.8px;
 }
 
-.text_fonction{
-   @extend %police-fonction;
+.text_fonction {
+    @extend %police-fonction;
 }
 
-.text__btn{
+.text__btn {
     color: $color-white;
     font-weight: 500;
     font-size: 16px;
 }
 
 footer .liens {
- display: flex;
- flex-direction: column;
+    display: flex;
+    flex-direction: column;
     gap: 7px;
 
-div{
-  display: flex;
+    div {
+        display: flex;
 
+    }
+
+    i {
+        margin: 0px 16px 0px 0px;
+    }
+
+    .text {
+        color: $color-white;
+    }
 }
 
-  i{
-    margin: 0px 16px 0px 0px;
-  }
-
-.text{
-    color: $color-white;
-}
-}
-
-h3{
+h3 {
     @extend %police-h3
 }
 
 
-#main-resto h3{
- @extend %police-fonction;
+#main-resto h3 {
+    @extend %police-fonction;
 }
 
-#main-resto h2{ 
+#main-resto h2 {
     @extend %h2-resto;
+
+    @media screen and (min-width:1024px) {
+        margin-left: 180px;
+    }
 }
 
-.text__prix{
+.text__prix {
     @extend %police-prix;
+}
+
+#fonctionnement h2 {
+
+    @media screen and (min-width:1024px) {
+        margin-left: 180px;
+    }
 }

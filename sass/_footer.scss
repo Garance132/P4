@@ -2,6 +2,10 @@ footer{
     background-color: $color-darkgrey;
     color: $color-white;
     height: 200px;
+
+    @media screen and (min-width:1024px){
+        margin-top: 90px;
+    }
     
     .liens{
         gap: 7px;
