@@ -19,12 +19,12 @@ body {
 .end-header {
     @extend %flex;
     background: $color-grey ;
-    color: #000000;
+    color: $color-darkgrey;
     height: 50px;
-    padding-right: 10%;
 
     i{
-        color: #000000
+        color: $color-darkgrey;
+        padding: 0px 17px 0px 0px ;
     }
 }
 
@@ -33,8 +33,8 @@ body {
     flex-direction: column;
     height: auto;
     gap: 15px;
-    padding:0px 50px 0px 50px;
-    margin: 50px 0px;
+    padding: 50px 50px;
+    background-color: $color-backgrounds;
 }
 
 
@@ -44,12 +44,22 @@ body {
     background: $color-white;
     padding: 50px 0px;
 
-
+    nav{
+        width: 75%
+    }
 }
 
 #restaurants {
     @extend %flex;
     flex-direction: column;
-    margin: 50px 0px;
+    padding: 50px 0px;
+    background-color: $color-backgrounds;
+
+    @media screen and (min-width:1024px) {
+        padding: 50px 0px 90px;
+    }
 }
 
+img {
+    object-fit: cover;
+}

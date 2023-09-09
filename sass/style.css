@@ -1,4 +1,4 @@
-.card .card-content, li.card-fonction, #fonctionnement ul p, #intro .text,
+.card-f, .card-content, li.card-fonction, #fonctionnement ul p, #intro .text,
 .text__resto, #restaurants, #fonctionnement, #intro, .end-header, #logo {
   display: flex;
   justify-content: center;
@@ -186,12 +186,23 @@ h3 {
   color: transparent;
 }
 
+@keyframes fillheart {
+  from {
+    transform: scaleY(0);
+    background-image: transparent;
+  }
+  to {
+    transform: scaleY(1);
+    background-image: linear-gradient(#9356DC, #FF79DA);
+  }
+}
 .heart input[type=checkbox]:checked + label .fa-heart {
   font-weight: 900;
   -webkit-background-clip: text;
           background-clip: text;
   background-image: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
+  animation: fillheart 1s ease;
 }
 
 /******************** Ajout plats commande **************/
@@ -219,10 +230,11 @@ h3 {
   padding: 5px;
   background-color: #F6F6F6;
   color: #99E2D0;
+  margin: 15px;
 }
 
 .view article .text {
-  white-space: nowrap;
+  white-space: wrap;
   text-overflow: ellipsis;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -263,20 +275,20 @@ body {
 
 .end-header {
   background: #eaeaea;
-  color: #000000;
+  color: #353535;
   height: 50px;
-  padding-right: 10%;
 }
 .end-header i {
-  color: #000000;
+  color: #353535;
+  padding: 0px 17px 0px 0px;
 }
 
 #intro {
   flex-direction: column;
   height: auto;
   gap: 15px;
-  padding: 0px 50px 0px 50px;
-  margin: 50px 0px;
+  padding: 50px 50px;
+  background-color: #F6F6F6;
 }
 
 #fonctionnement {
@@ -284,10 +296,24 @@ body {
   background: #ffffff;
   padding: 50px 0px;
 }
+#fonctionnement nav {
+  width: 75%;
+}
 
 #restaurants {
   flex-direction: column;
-  margin: 50px 0px;
+  padding: 50px 0px;
+  background-color: #F6F6F6;
+}
+@media screen and (min-width: 1024px) {
+  #restaurants {
+    padding: 50px 0px 90px;
+  }
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .text {
@@ -302,8 +328,7 @@ a {
 }
 
 .text__h2 {
-  width: 80%;
-  margin: 0px 30px 0px 0px;
+  width: 75%;
   padding-bottom: 15px;
 }
 
@@ -326,6 +351,15 @@ a {
   font-size: 14.8px;
 }
 
+.text_fonction {
+  width: 211px;
+}
+@media screen and (min-width: 1024px) {
+  .text_fonction {
+    padding-right: 65px;
+  }
+}
+
 .text__btn {
   color: #ffffff;
   font-weight: 500;
@@ -343,6 +377,11 @@ footer .liens div {
 footer .liens i {
   margin: 0px 16px 0px 0px;
 }
+@media screen and (min-width: 1024px) {
+  footer .liens i {
+    margin: 0px 5px;
+  }
+}
 footer .liens .text {
   color: #ffffff;
 }
@@ -353,13 +392,7 @@ footer .liens .text {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  #fonctionnement h2 {
-    margin-left: 180px;
-  }
-}
-
-.card .card-content, li.card-fonction, #fonctionnement ul p, #logo, .end-header, #intro, #fonctionnement, #restaurants, #intro .text,
+.card-f, .card-content, li.card-fonction, #fonctionnement ul p, #logo, .end-header, #intro, #fonctionnement, #restaurants, #intro .text,
 .text__resto {
   display: flex;
   justify-content: center;
@@ -380,10 +413,20 @@ footer .liens .text {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   transition: opacity 250ms;
 }
+@media screen and (min-width: 1024px) {
+  .btn__intro {
+    width: 25%;
+  }
+}
 
 .btn__resto {
   margin: 40px 94.5px 10px;
   width: 45%;
+}
+@media screen and (min-width: 1024px) {
+  .btn__resto {
+    margin: 40px 25%;
+  }
 }
 
 ul {
@@ -403,19 +446,17 @@ ul {
 i {
   size: 16px;
   color: #7e7e7e;
-  margin: 0px 16px;
+  padding: 0px 17px 0px 37px;
 }
 
 li.card-fonction {
   margin-bottom: 24.92px;
   list-style: none;
   position: relative;
-  width: 335px;
   height: 72.38px;
   background: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  padding: 0px 37px 0px 0px;
 }
 li.card-fonction div {
   font-size: 16px;
@@ -426,20 +467,22 @@ li.card-fonction p {
   margin: 0;
 }
 li.card-fonction .fa-xs {
-  padding-left: 8px;
   font-size: 16px;
+  size: 16px;
+  color: #7e7e7e;
+  padding: 0px 17px 0px 37px;
 }
 
-#resto-card {
+#restaurants #resto-card {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 75%;
 }
 @media screen and (min-width: 1024px) {
-  #resto-card {
+  #restaurants #resto-card {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 100px;
@@ -449,18 +492,17 @@ li.card-fonction .fa-xs {
 .card {
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 251px;
   border-radius: 15px;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .card {
-    width: 100%;
     margin-bottom: -50px;
   }
 }
 .card img {
-  width: 346px;
+  width: 100%;
   height: 164px;
   border-radius: 15px 15px 0px 0px;
 }
@@ -469,26 +511,51 @@ li.card-fonction .fa-xs {
     width: 490px;
   }
 }
-.card .card-content {
+
+.card-content {
   justify-content: space-between;
   height: 87px;
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 0px 0px 15px 15px;
 }
-.card .txt-card {
+
+.card-f {
+  justify-content: space-between;
+  height: 87px;
+  border-radius: 0px 0px 15px 15px;
+}
+@media screen and (min-width: 1024px) {
+  .card-f {
+    width: 335px;
+  }
+}
+
+.txt-card {
   margin: 15px 8px;
 }
-.card i {
+
+i {
   font-size: x-large;
   border: 1px;
-  margin: 15px 15px 30px;
+}
+
+.new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99E2D0;
+  color: #353535;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 1024px) {
   #fonctionnement ul {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 22px;
+    flex-wrap: wrap;
   }
 }
 footer {
@@ -496,14 +563,17 @@ footer {
   color: #ffffff;
   height: 200px;
 }
-@media screen and (min-width: 1024px) {
-  footer {
-    margin-top: 90px;
-  }
-}
 footer .liens {
   gap: 7px;
   margin-left: 20px;
+}
+@media screen and (min-width: 1024px) {
+  footer .liens {
+    display: flex;
+    flex-direction: row;
+    padding: 64px 0px 0px;
+    float: right;
+  }
 }
 footer .liens-footer {
   display: flex;
@@ -513,8 +583,31 @@ footer img {
   filter: brightness(0) invert(1) hue-rotate(180deg) grayscale(100%);
   padding: 22px 25px;
 }
+@media screen and (min-width: 1024px) {
+  footer img {
+    margin-top: 35px;
+    float: right;
+  }
+}
 footer i {
   padding: 2px;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 114px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .espace {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .espace-2 {
+    padding-right: 60px;
+  }
 }
 
 html,
@@ -531,11 +624,11 @@ body {
   align-items: center;
   gap: 41px;
   margin-left: 17px;
+  justify-content: space-between;
 }
-@media screen and (min-width: 1024px) {
-  #header-logo {
-    margin: 0px 619px;
-  }
+
+#header-logo .header-logo {
+  margin-right: 45%;
 }
 
 .fa-arrow-left {
@@ -550,7 +643,31 @@ body {
 }
 
 #resto-img-delice {
-  background-image: url(../Images\ et\ textes\ Ohmyfood/#resto-img-delice);
+  background-image: url(../Images_et_textes_Ohmyfood/#resto-img-delice);
+  background-size: cover;
+  background-position: center;
+  height: 275px;
+  width: 100%;
+}
+
+#resto-img-francaise {
+  background-image: url(../Images_et_textes_Ohmyfood/#resto-img-francaise);
+  background-size: cover;
+  background-position: center;
+  height: 275px;
+  width: 100%;
+}
+
+#resto-img-enchantes {
+  background-image: url(../Images_et_textes_Ohmyfood/#resto-img-enchantes);
+  background-size: cover;
+  background-position: center;
+  height: 275px;
+  width: 100%;
+}
+
+#resto-img-palette {
+  background-image: url(../Images_et_textes_Ohmyfood/#resto-img-palette);
   background-size: cover;
   background-position: center;
   height: 275px;
@@ -566,7 +683,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   #main-resto {
-    margin: -30px 193px;
+    margin: -30px 193px 0px;
+    padding: 81px 210px;
   }
 }
 #main-resto article {
@@ -594,6 +712,11 @@ body {
   align-items: center;
   font-family: "shrikhand", sans-serif;
   margin: 0px 0px 40px 17px;
+}
+@media screen and (min-width: 1024px) {
+  #title-resto {
+    justify-content: center;
+  }
 }
 
 #end-card {

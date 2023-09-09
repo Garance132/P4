@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ea11a8f2e0.js" crossorigin="anonymous" alt="fontawesome"></script>
+    <script src="https://kit.fontawesome.com/ea11a8f2e0.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
 </head>
 
@@ -19,16 +19,20 @@
         <div id="header-logo">
             <a href="../index.html">
                 <i class="fa-solid fa-arrow-left"></i></a>
-        <img src="../Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" class="logo-resto" alt="logo">
+        <img src="../Images_et_textes_Ohmyfood/images/logo/ohmyfood@2x.svg" class="logo-resto header-logo" alt="logo">
         </div>
-        <img src="../Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" id="resto-img" alt="resto">
+        <img src="../Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" id="resto-img-palette" alt="resto">
     </header>
 
     <main id="main-resto">
 
         <div id="title-resto">
             <h1 class="text"> La palette du goût</h1>
-            <i class="fa-regular fa-heart"></i>
+            <div class="heart">
+                <input type="checkbox" id="coche-heart-1" name="coche-heart-1">
+                <label for="coche-heart-1">
+                    <i class="fa-solid fa-heart coeur" id="coeur-plein"></i></label>
+            </div>
         </div>
 
         <div class="view">
@@ -182,7 +186,7 @@
 </body>
 
 <footer>
-    <img src="../Images et textes Ohmyfood/images/logo/ohmyfood.png" class="logo-footer" alt="logo">
+    <img src="../Images_et_textes_Ohmyfood/images/logo/ohmyfood.png" class="logo-footer" alt="logo">
 
     <div class="liens">
         <div>
@@ -193,10 +197,10 @@
             <i class="fa-solid fa-handshake-angle"></i>
             <p class="text text__p">Devenir partenaire</p>
         </div>
-        <div>
+        <div class="espace">
             <p class="text text__p">Mentions légales</p>
         </div>
-        <div>
+        <div class="espace-2">
             <p class="text text__p">Contact</p>
         </div>
     </div>

@@ -20,6 +20,10 @@
         transition: opacity 250ms;
     }
 
+    @media screen and (min-width:1024px){
+        width: 25%;
+    }
+
 }
 
 
@@ -27,6 +31,10 @@
 .btn__resto {
     margin: 40px 94.5px 10px;
     width: 45%;
+
+    @media screen and (min-width:1024px){
+        margin: 40px 25%;
+    }
 }
 
 ul {
@@ -48,7 +56,7 @@ ul {
 i {
     size: 16px;
     color: #7e7e7e;
-    margin: 0px 16px;
+    padding: 0px 17px 0px 37px;
 }
 
 
@@ -58,12 +66,11 @@ li.card-fonction {
     margin-bottom: 24.92px;
     list-style: none;
     position: relative;
-    width: 335px;
     height: 72.38px;
     background: #f6f6f6;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    padding: 0px 37px 0px 0px;
+
 
 
     div {
@@ -71,62 +78,76 @@ li.card-fonction {
         margin: 0;
     }
 
+
     p {
         padding: 0;
         margin: 0;
     }
 
     .fa-xs {
-        padding-left: 8px;
         font-size: 16px;
+        size: 16px;
+    color: #7e7e7e;
+    padding: 0px 17px 0px 37px;
     }
 
 }
 
-#resto-card {
+#restaurants #resto-card{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 75%;
 
     @media screen and (min-width:1024px) {
             display: flex;
             flex-direction: row;
-            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 100px;
     }
 }
 
-.card {
+.card{
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 251px;
     border-radius: 15px;
+    position: relative;
 
     @media screen and (min-width:1024px) {
-            width:100%;
+
             margin-bottom: -50px;
     }
 
     img {
-        width: 346px;
+        width: 100%;
         height: 164px;
         border-radius: 15px 15px 0px 0px;
 
-
         @media screen and (min-width:1024px) {
-            width:490px;
+            width: 490px;;
     }
     }
+}
 
     .card-content {
         @extend %flex;
         justify-content: space-between;
         height: 87px;
         background-color: #ffffff;
-        border-radius: 15px;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .card-f {
+        @extend %flex;
+        justify-content: space-between;
+        height: 87px;
+        border-radius: 0px 0px 15px 15px;
+
+        @media  screen and (min-width:1024px) {
+            width: 335px;
+        }
     }
 
     .txt-card {
@@ -136,15 +157,26 @@ li.card-fonction {
     i {
         font-size: x-large;
         border: 1px;
-        margin: 15px 15px 30px;
     }
-}
+
+    .new{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: $color-new;
+        color: $color-darkgrey;
+        padding: 5px 10px;
+        border-radius: 2px;
+        font-size: 12px;
+    }
+
 
 @media screen and (min-width:1024px) {
     #fonctionnement ul{
         display: flex;
         flex-direction: row;
-        gap: 24px;
+        gap: 22px;
+        flex-wrap: wrap;
     }
 }
 

@@ -11,9 +11,9 @@ a {
 
 .text__h2 {
     @extend %police-h2;
-    width: 80%;
-    margin: 0px 30px 0px 0px;
+    width: 75%;
     padding-bottom: 15px;
+
 }
 
 #intro .text,
@@ -38,6 +38,11 @@ a {
 
 .text_fonction {
     @extend %police-fonction;
+    width: 211px;
+
+    @media screen and (min-width:1024px){
+  padding-right: 65px;
+    }
 }
 
 .text__btn {
@@ -58,6 +63,10 @@ footer .liens {
 
     i {
         margin: 0px 16px 0px 0px;
+
+        @media screen and (min-width:1024px){
+            margin: 0px 5px;
+        }
     }
 
     .text {
@@ -84,11 +93,4 @@ h3 {
 
 .text__prix {
     @extend %police-prix;
-}
-
-#fonctionnement h2 {
-
-    @media screen and (min-width:1024px) {
-        margin-left: 180px;
-    }
 }

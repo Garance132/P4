@@ -3,13 +3,19 @@ footer{
     color: $color-white;
     height: 200px;
 
-    @media screen and (min-width:1024px){
-        margin-top: 90px;
-    }
+  
     
     .liens{
         gap: 7px;
         margin-left: 20px;
+
+        @media screen and (min-width:1024px) {
+            display: flex;
+            flex-direction: row;
+            padding: 64px 0px 0px;
+            float: right;
+            
+        }
     }
 
     .liens-footer{
@@ -20,9 +26,31 @@ footer{
         width: 139px;
         filter: brightness(0) invert(1) hue-rotate(180deg) grayscale(100%);
         padding: 22px 25px;
+
+        @media screen and (min-width:1024px) {
+            margin-top: 35px;
+            float: right;
+        }
     }
 
     i{
         padding: 2px;
+    }
+
+    @media screen and (min-width:1024px){
+        height: 114px;
+    }
+
+}
+
+.espace{
+    @media screen and (min-width:1024px){
+      padding-left: 30px;;
+    }
+}
+
+.espace-2{
+    @media screen and (min-width:1024px){
+      padding-right: 60px;
     }
 }
