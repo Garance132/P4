@@ -14,7 +14,7 @@
     height: 50px;
 
     &:hover {
-        background: lighten ((#9356DC, #FF79DA), 5);
+       opacity: -3%;
         opacity: 0.75;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.50);
         transition: opacity 250ms;
@@ -54,7 +54,7 @@ ul {
 }
 
 i {
-    size: 16px;
+    font-size: 16px;
     color: #7e7e7e;
     padding: 0px 17px 0px 37px;
 }
@@ -86,7 +86,6 @@ li.card-fonction {
 
     .fa-xs {
         font-size: 16px;
-        size: 16px;
     color: #7e7e7e;
     padding: 0px 17px 0px 37px;
     }

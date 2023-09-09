@@ -8,35 +8,35 @@
 .text__h2 {
   font-family: "roboto", sans-serif;
   font-weight: 700;
-  size: 24px;
+  font-size: 24px;
   color: black;
 }
 
 #main-resto h3, .text_fonction {
   font-family: "roboto", sans-serif;
   font-weight: 500;
-  size: 16px;
+  font-size: 16px;
   color: black;
 }
 
 h3 {
   font-family: "roboto", sans-serif;
   font-weight: 700;
-  size: 18px;
+  font-size: 18px;
   color: black;
 }
 
 #main-resto h2 {
   font-family: "roboto", sans-serif;
   font-weight: 300;
-  size: 16px;
+  font-size: 16px;
   color: black;
 }
 
 .text__prix {
   font-family: "roboto", sans-serif;
   font-weight: 700;
-  size: 15.04px;
+  font-size: 15.04px;
   color: black;
 }
 
@@ -189,11 +189,9 @@ h3 {
 @keyframes fillheart {
   from {
     transform: scaleY(0);
-    background-image: transparent;
   }
   to {
     transform: scaleY(1);
-    background-image: linear-gradient(#9356DC, #FF79DA);
   }
 }
 .heart input[type=checkbox]:checked + label .fa-heart {
@@ -234,7 +232,6 @@ h3 {
 }
 
 .view article .text {
-  white-space: wrap;
   text-overflow: ellipsis;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -408,7 +405,7 @@ footer .liens .text {
   height: 50px;
 }
 .btn__intro:hover {
-  background: lighten #9356DC, #FF79DA, 5;
+  opacity: -3%;
   opacity: 0.75;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   transition: opacity 250ms;
@@ -444,7 +441,7 @@ ul {
 }
 
 i {
-  size: 16px;
+  font-size: 16px;
   color: #7e7e7e;
   padding: 0px 17px 0px 37px;
 }
@@ -468,7 +465,6 @@ li.card-fonction p {
 }
 li.card-fonction .fa-xs {
   font-size: 16px;
-  size: 16px;
   color: #7e7e7e;
   padding: 0px 17px 0px 37px;
 }

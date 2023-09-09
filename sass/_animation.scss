@@ -163,12 +163,10 @@
 @keyframes fillheart {
     from {
         transform: scaleY(0);
-        background-image: transparent;
     }
 
     to{
         transform: scaleY(1);
-        background-image:linear-gradient(#9356DC, #FF79DA);
     }
 }
 
@@ -211,7 +209,6 @@
     margin: 15px;
 }
 .view article .text{
-    white-space: wrap;
     text-overflow: ellipsis;
     overflow: hidden;
     transition: transform 0.3s ease;
