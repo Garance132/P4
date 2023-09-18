@@ -481,7 +481,7 @@ li.card-fonction .fa-xs {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 150px;
   }
 }
 
@@ -550,7 +550,7 @@ i {
   #fonctionnement ul {
     display: flex;
     flex-direction: row;
-    gap: 22px;
+    gap: 44px;
     flex-wrap: wrap;
   }
 }
