@@ -161,12 +161,16 @@
 }
 
 @keyframes fillheart {
-    from {
-        transform: scaleY(0);
+    0% {
+        opacity: 0;
     }
 
-    to{
-        transform: scaleY(1);
+    20% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -182,52 +186,169 @@
 
 /******************** Ajout plats commande **************/
 
-.view article{
+// .view article {
+//     position: relative;
+//     overflow: hidden;
+// }
+
+
+// .view input[type="checkbox" i] {
+//     position: relative;
+//     width: 0;
+//     height: 0;
+//     opacity: 0;
+// }
+
+// .view label{
+//     cursor: pointer;
+// }
+
+// .view article .progress {
+//     position: absolute;
+//     right: -59px;
+//     top: 0%;
+//     background-color: red;
+//     border-radius: 0px 15px 15px 0px;
+//     width: 59px;
+//     height: 75px;
+//     transition: right 0.3s ease;
+
+// }
+
+// .view article input[type="checkbox"]:checked+label .progress {
+//     transform: translateX(-59px);
+//     animation-name: swipe;
+// }
+
+// @keyframes swipe {
+
+//     0% {
+//         transform: translateX(-59px)
+//     }
+
+//     100% {
+//         transform: translateX(1);
+
+
+
+// #main-resto article{
+//     position: relative;
+//     width: 349px; /* Largeur de l'encart */
+  
+      
+//       .checkbox {
+//         position: absolute;
+//         left: -9999px; /* Masque la case à cocher */
+//       }
+      
+
+//       .progress {
+//         position: absolute;
+//         right: -59px;
+//         top: 0;
+//         background-color: rgba(153, 226, 208, 1);
+//         border-radius: 0px 15px 15px 0px;
+//         width: 59px;
+//         height: 69px; /* Ajustez la hauteur pour correspondre à l'encart */
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         z-index: 1;
+//         transition: right 0.3s ease;
+//         cursor: pointer;
+  
+//         &::before , &::after{
+//           content: '';
+//           position: absolute;
+//           width: 0;
+//           height: 0;
+//           border-style: solid;
+//           border-width: 34.5px 0 34.5px 34.5px;
+//           border-color: transparent transparent transparent rgba(153, 226, 208, 1);
+        
+//         }
+  
+//       }
+
+//       .label {
+//         cursor: pointer;
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         z-index: 2;
+//       }
+      
+//       .checkbox:checked + .label + .progress {
+//         right: 0;
+
+//         animation: swipe 0.3s ease;
+//       }
+
+//       @keyframes swipe {
+//         from {
+//             transform: translate(-59px);
+//         }
+
+//         to {
+//             transform: translate(0);
+//         }
+//     }
+
+// }
+
+.view article {
     position: relative;
-    overflow: hidden;
+    width: 349px;
 }
 
-.progress{
-    display: none;
-    justify-content: center;
-    align-items: center;
+.checkbox {
+    position: absolute;
+    left: -9999px;
+}
+.progress {
     position: absolute;
     right: -59px;
-    top: 0%;
-    background-color: $color-new;
+    top: 0;
+    background-color: rgba(153, 226, 208, 1);
     border-radius: 0px 15px 15px 0px;
     width: 59px;
-    height: 75px;
-    transition: right 0.3s ease;
-}
-
-.progress i{
-    border-radius: 50%;
-    padding: 5px;
-    background-color: $color-backgrounds;
-    color: $color-new;
-    margin: 15px;
-}
-.view article .text{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.view article .text__prix{
-    transition: transform 0.3s ease;
-}
-
-.view article:hover .progress{
-    right: 0;
+    height: 69px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: right 0.3s ease;
+    cursor: pointer;
+
+ .progress::before, .progress::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 34.5px 0 34.5px 34.5px;
+    border-color: transparent transparent transparent rgba(153, 226, 208, 1);
+}
 }
 
-.view article:hover .text__prix{
-transform: translateX(-59px);
+.label {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
 }
 
-.view article:hover .text{
-    text-overflow: unset;
+.checkbox:checked + .label + .progress {
+    right: 0;
+    animation: swipe 0.3s ease;
 }
 
+@keyframes swipe {
+    from {
+        transform: translateX(-59px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
