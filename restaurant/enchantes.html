@@ -28,7 +28,9 @@
             alt="resto">
     </header>
 
-    <main id="main-resto">
+    <main>
+
+        <section id="main-resto">
 
         <div id="title-resto">
             <H1 class="text">La note enchantée</H1>
@@ -44,12 +46,16 @@
             <h2 class="text">Entrées</h2>
             <div class="bar"></div>
             <article>
-
-                <h3 class="text">Ravioles de foie gras</h3>
-                <div>
-                    <p class="text text__p">Accompagnées de leur créme a la truffe</p>
-                    <p class="text text__prix">25€</p>
+                <input type="checkbox" id="checkbox_1" name="checkbox" class="checkbox">
+                <h3 class="text">Tartare de thon</h3>
+                <div class="para-menu">
+                    <p class="text text__p">Assaisonné au yuzu</p>
+                    <div class="prix-resto">
+                        25€
+                    </div>
                 </div>
+
+                <label for="checkbox_1" class="label"></label>
                 <div class="progress">
                     <span>
                         <i class="fa-solid fa-check"></i>
@@ -58,12 +64,16 @@
             </article>
 
             <article>
-
-                <h3 class="text">Caviar osciètre</h3>
-                <div>
-                    <p class="text text__p">Sur blini à la farine de blé noir</p>
-                    <p class="text text__prix">35€</p>
+                <input type="checkbox" id="checkbox_2" name="checkbox" class="checkbox">
+                <h3 class="text">Bouchée de homard croustillant</h3>
+                <div class="para-menu">
+                    <p class="text text__p">Et sa farandole de petits légumes</p>
+                    <div class="prix-resto">
+                        35€
+                    </div>
                 </div>
+
+                <label for="checkbox_2" class="label"></label>
                 <div class="progress">
                     <span>
                         <i class="fa-solid fa-check"></i>
@@ -72,26 +82,16 @@
             </article>
 
             <article>
-
-                <h3 class="text">Homard et espuma de potiron</h3>
-                <div>
-                    <p class="text text__p">Marinés aux zestes d'orange</p>
-                    <p class="text text__prix">20€</p>
+                <input type="checkbox" id="checkbox_3" name="checkbox" class="checkbox">
+                <h3 class="text">Poulet rôti aux herbes de Provence</h3>
+                <div class="para-menu">
+                    <p class="text text__p">Et sa crême de truffe</p>
+                    <div class="prix-resto">
+                        40€
+                    </div>
                 </div>
-                <div class="progress">
-                    <span>
-                        <i class="fa-solid fa-check"></i>
-                    </span>
-                </div>
-            </article>
 
-            <article>
-
-                <h3 class="text">Foie gras de canard cuit entier</h3>
-                <div>
-                    <p class="text text__p">Confiture de figue et pain toasté</p>
-                    <p class="text text__prix">35€</p>
-                </div>
+                <label for="checkbox_3" class="label"></label>
                 <div class="progress">
                     <span>
                         <i class="fa-solid fa-check"></i>
@@ -104,13 +104,18 @@
 
             <h2 class="text">Plats</h2>
             <div class="bar"></div>
-            <article>
 
-                <h3 class="text">Noix de coquilles Saint-Jacques</h3>
-                <div>
-                    <p class="text text__p">Sur lit de purée de céleri-rave</p>
-                    <p class="text text__prix">40€</p>
+            <article>
+                <input type="checkbox" id="checkbox_4" name="checkbox" class="checkbox">
+                <h3 class="text">Poulet rôti aux herbes de Provence</h3>
+                <div class="para-menu">
+                    <p class="text text__p">Et sa crême de truffe</p>
+                    <div class="prix-resto">
+                        40€
+                    </div>
                 </div>
+
+                <label for="checkbox_4" class="label"></label>
                 <div class="progress">
                     <span>
                         <i class="fa-solid fa-check"></i>
@@ -118,13 +123,35 @@
                 </div>
             </article>
 
-            <article>
 
-                <h3 class="text">Langoustine poêlée</h3>
-                <div>
-                    <p class="text text__p">Purée de patate douce</p>
-                    <p class="text text__prix">35€</p>
+            <article>
+                <input type="checkbox" id="checkbox_5" name="checkbox" class="checkbox">
+                <h3 class="text">Langouste rôtie</h3>
+                <div class="para-menu">
+                    <p class="text text__p">Et ses légumes de saison</p>
+                    <div class="prix-resto">
+                        35€
+                    </div>
                 </div>
+
+                <label for="checkbox_5" class="label"></label>
+                <div class="progress">
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                </div>
+            </article>
+            <article>
+                <input type="checkbox" id="checkbox_6" name="checkbox" class="checkbox">
+                <h3 class="text">Côte de boeuf</h3>
+                <div class="para-menu">
+                    <p class="text text__p">Et sa purée de panais</p>
+                    <div class="prix-resto">
+                        44€
+                    </div>
+                </div>
+
+                <label for="checkbox_6" class="label"></label>
                 <div class="progress">
                     <span>
                         <i class="fa-solid fa-check"></i>
@@ -132,19 +159,6 @@
                 </div>
             </article>
 
-            <article>
-
-                <h3 class="text">Mijoté de queue de boeuf</h3>
-                <div>
-                    <p class="text text__p">Et riz sauvage aux zestes de citron</p>
-                    <p class="text text__prix">45€</p>
-                </div>
-                <div class="progress">
-                    <span>
-                        <i class="fa-solid fa-check"></i>
-                    </span>
-                </div>
-            </article>
         </div>
 
             <div class="view">
@@ -152,12 +166,16 @@
             <h2 class="text"> Desserts</h2>
             <div class="bar"></div>
             <article>
-
-                <h3 class="text">Macaron noisette et chocolat</h3>
-                <div>
-                    <p class="text text__p">Glace au caramel brun et sel de Guérande</p>
-                    <p class="text text__prix">18€</p>
+                <input type="checkbox" id="checkbox_7" name="checkbox" class="checkbox">
+                <h3 class="text">Farandole de desserts</h3>
+                <div class="para-menu">
+                    <p class="text text__p">Du chef</p>
+                    <div class="prix-resto">
+                        18€
+                    </div>
                 </div>
+
+                <label for="checkbox_7" class="label"></label>
                 <div class="progress">
                     <span>
                         <i class="fa-solid fa-check"></i>
@@ -166,12 +184,16 @@
             </article>
 
             <article>
-
-                <h3 class="text">Baba au rhum revisité</h3>
-                <div>
-                    <p class="text text__p">Avec son coulis de citron</p>
-                    <p class="text text__prix">22€</p>
+                <input type="checkbox" id="checkbox_8" name="checkbox" class="checkbox">
+                <h3 class="text">Crème brulée</h3>
+                <div class="para-menu">
+                    <p class="text text__p">Revisitée</p>
+                    <div class="prix-resto">
+                        22€
+                    </div>
                 </div>
+
+                <label for="checkbox_8" class="label"></label>
                 <div class="progress">
                     <span>
                         <i class="fa-solid fa-check"></i>
@@ -180,12 +202,16 @@
             </article>
 
             <article id="end-card">
-
-                <h3 class="text">Tarte au citron meringuée</h3>
-                <div>
-                    <p class="text text__p">Déstructuré</p>
-                   <p class="text text__prix">23€</p> 
+                <input type="checkbox" id="checkbox_9" name="checkbox" class="checkbox">
+                <h3 class="text">Tiramisu</h3>
+                <div class="para-menu">
+                    <p class="text text__p">À la noisette</p>
+                    <div class="prix-resto">
+                        23€
+                    </div>
                 </div>
+
+                <label for="checkbox_9" class="label"></label>
                 <div class="progress">
                     <span>
                         <i class="fa-solid fa-check"></i>
@@ -197,30 +223,33 @@
 
         <div class="btn__resto text btn__intro  text__btn text__resto">Commander</div>
 
+        </section>
 
-    </main>
+
+        <footer>
+            <img src="../Images_et_textes_Ohmyfood/images/logo/ohmyfood.png" class="logo-footer" alt="logo">
+
+            <div class="liens">
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <p class="text text__p">Proposer un restaurant</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <p class="text text__p">Devenir partenaire</p>
+                </div>
+                <div class="espace">
+                    <p class="text text__p">Mentions légales</p>
+                </div>
+                <div class="espace-2">
+                    <a href="mailto:gtrdy.vde@gmail.com">
+                    <p class="text text__p">Contact</p>
+                </a>
+                </div>
+            </div>
+        </footer>
+</main>
 
 </body>
-
-<footer>
-    <img src="../Images_et_textes_Ohmyfood/images/logo/ohmyfood.png" class="logo-footer" alt="logo">
-
-    <div class="liens">
-        <div>
-            <i class="fa-solid fa-utensils"></i>
-            <p class="text text__p">Proposer un restaurant</p>
-        </div>
-        <div>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p class="text text__p">Devenir partenaire</p>
-        </div>
-        <div class="espace">
-            <p class="text text__p">Mentions légales</p>
-        </div>
-        <div class="espace-2">
-            <p class="text text__p">Contact</p>
-        </div>
-    </div>
-</footer>
 
 </html>

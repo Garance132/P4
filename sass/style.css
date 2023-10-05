@@ -226,7 +226,7 @@ ul {
   left: -10px;
 }
 
-i {
+.card-fonction i {
   font-size: 16px;
   color: #7e7e7e;
   padding: 0px 17px 0px 37px;
@@ -344,6 +344,11 @@ footer {
   background-color: #353535;
   color: #ffffff;
   height: 200px;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    width: 100%;
+  }
 }
 footer .liens {
   gap: 7px;
@@ -617,19 +622,19 @@ body {
     opacity: 1;
   }
 }
-#main-resto .view:nth-child(2) {
-  animation: progress-page 0s linear;
-  animation-delay: 0.2s;
-}
-
-#main-resto .view:nth-child(3) {
-  animation: progress-page 0s linear;
+#main-resto .view:nth-child(1) {
+  animation: progress-page 1s linear;
   animation-delay: 0.4s;
 }
 
-#main-resto .view:nth-child(4) {
-  animation: progress-page 0s linear;
+#main-resto .view:nth-child(2) {
+  animation: progress-page 1s linear;
   animation-delay: 0.6s;
+}
+
+#main-resto .view:nth-child(3) {
+  animation: progress-page 1s linear;
+  animation-delay: 0.8s;
 }
 
 /*********** coeur ****************/
@@ -642,6 +647,9 @@ body {
 
 .heart .fa-solid {
   font-weight: 200;
+  font-size: 23px;
+  color: #7e7e7e;
+  padding: 0px 17px 0px 37px;
 }
 .heart .fa-solid:active {
   font-weight: 900;
@@ -672,59 +680,57 @@ body {
 }
 
 /******************** Ajout plats commande **************/
-.view article {
+#main-resto article {
   position: relative;
-  width: 349px;
+  overflow: hidden;
 }
-
-.checkbox {
+#main-resto article .checkbox {
+  display: none;
+}
+#main-resto article .label {
   position: absolute;
-  left: -9999px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
 }
 
 .progress {
   position: absolute;
-  right: -59px;
+  right: 0;
   top: 0;
-  background-color: rgb(153, 226, 208);
+  background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  width: 59px;
-  height: 69px;
+  width: 0;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  transition: right 0.3s ease;
-  cursor: pointer;
+  transition: width 0.3s ease;
+  font-size: 20px;
 }
-.progress .progress::before, .progress .progress::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 34.5px 0 34.5px 34.5px;
-  border-color: transparent transparent transparent rgb(153, 226, 208);
+.progress i {
+  color: #99E2D0;
+  border: #ffffff 3px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 16px;
+  background-color: #ffffff;
+  font-size: 16px;
 }
 
-.label {
-  cursor: pointer;
-  width: 100%;
+.prix-resto {
+  transition: transform 0.3s ease;
   height: 100%;
-  position: absolute;
-  z-index: 2;
 }
 
-.checkbox:checked + .label + .progress {
-  right: 0;
-  animation: swipe 0.3s ease;
+.checkbox:checked ~ .progress {
+  width: 59px;
 }
 
-@keyframes swipe {
-  from {
-    transform: translateX(-59px);
-  }
-  to {
-    transform: translateX(0);
-  }
+.checkbox:checked ~ .para-menu .prix-resto {
+  transform: translateX(-59px);
 }/*# sourceMappingURL=style.css.map */
