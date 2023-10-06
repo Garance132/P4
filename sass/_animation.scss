@@ -209,6 +209,8 @@
 
 }
 
+/*  */
+
 .progress {
     position: absolute;
     right: 0;
@@ -236,6 +238,7 @@
 }
 
 .prix-resto{
+    z-index: 2;
     transition: transform 0.3s ease;
     height: 100%;
 }
@@ -246,6 +249,20 @@
 
 .checkbox:checked~.para-menu .prix-resto{
     transform: translateX(-59px);
+
+
+    /* Ajout fond blanc derrière le prix */
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 60px;
+        height: 72px;
+        background: rgba(255, 255, 255, 0.851);
+        z-index: -1;
+    }
  }
 
 

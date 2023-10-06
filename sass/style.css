@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .card-f, .card-content, li.card-fonction, #fonctionnement ul p, #intro .text,
 .text__resto, #restaurants, #fonctionnement, #intro, .end-header, #logo {
   display: flex;
@@ -697,6 +698,7 @@ body {
   z-index: 2;
 }
 
+/*  */
 .progress {
   position: absolute;
   right: 0;
@@ -723,6 +725,7 @@ body {
 }
 
 .prix-resto {
+  z-index: 2;
   transition: transform 0.3s ease;
   height: 100%;
 }
@@ -733,4 +736,16 @@ body {
 
 .checkbox:checked ~ .para-menu .prix-resto {
   transform: translateX(-59px);
+  /* Ajout fond blanc derrière le prix */
+}
+.checkbox:checked ~ .para-menu .prix-resto:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.851);
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
