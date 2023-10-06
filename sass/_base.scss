@@ -1,3 +1,6 @@
+
+/* mise en place generale de l'html */
+
 html,
 body {
     margin: 0;
@@ -7,6 +10,8 @@ body {
     background-color: #F6F6F6;
 }
 
+/* position et apparence du logo*/
+
 #logo {
     @extend %flex;
     height: 63px;
@@ -15,6 +20,8 @@ body {
 
     box-shadow:0px 2px 4px rgba(0,0,0,0.15);
 }
+
+/* posiotn et apparence du sous logo*/
 
 .end-header {
     @extend %flex;
@@ -28,6 +35,8 @@ body {
     }
 }
 
+/* mise en place de l'intro */
+
 #intro {
     @extend %flex;
     flex-direction: column;
@@ -37,6 +46,7 @@ body {
     background-color: $color-backgrounds;
 }
 
+/* mise en place de la partie 'fonctionnement' */
 
 #fonctionnement {
     @extend %flex;
@@ -48,6 +58,8 @@ body {
         width: 75%
     }
 }
+
+/* mise en place de la partie restaurant */
 
 #restaurants {
     @extend %flex;

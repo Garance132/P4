@@ -41,6 +41,7 @@ h3 {
   color: black;
 }
 
+/* mise en place generale de l'html */
 html,
 body {
   margin: 0;
@@ -50,6 +51,7 @@ body {
   background-color: #F6F6F6;
 }
 
+/* position et apparence du logo*/
 #logo {
   height: 63px;
   background-color: #ffffff;
@@ -57,6 +59,7 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* posiotn et apparence du sous logo*/
 .end-header {
   background: #eaeaea;
   color: #353535;
@@ -67,6 +70,7 @@ body {
   padding: 0px 17px 0px 0px;
 }
 
+/* mise en place de l'intro */
 #intro {
   flex-direction: column;
   height: auto;
@@ -75,6 +79,7 @@ body {
   background-color: #F6F6F6;
 }
 
+/* mise en place de la partie 'fonctionnement' */
 #fonctionnement {
   flex-direction: column;
   background: #ffffff;
@@ -84,6 +89,7 @@ body {
   width: 75%;
 }
 
+/* mise en place de la partie restaurant */
 #restaurants {
   flex-direction: column;
   padding: 50px 0px;
@@ -183,6 +189,7 @@ footer .liens .text {
   align-items: center;
 }
 
+/* bouton 'explorer nos restaurants */
 .btn__intro {
   border: none;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -203,6 +210,7 @@ footer .liens .text {
   }
 }
 
+/* Ajout d'lement du bouton restaurant par rapport au bouton intro */
 .btn__resto {
   margin: 40px 94.5px 10px;
   width: 45%;
@@ -218,6 +226,7 @@ ul {
   margin: 26px 20px 0px 20px;
 }
 
+/* card de la partie fonctionnement */
 #fonctionnement ul p {
   width: 24px;
   height: 24px;
@@ -256,6 +265,7 @@ li.card-fonction .fa-xs {
   padding: 0px 17px 0px 37px;
 }
 
+/* carte des restaurants sur la page d'accueil*/
 #restaurants #resto-card {
   display: flex;
   flex-direction: column;
@@ -341,10 +351,12 @@ i {
     flex-wrap: wrap;
   }
 }
+/* mise en place du footer */
 footer {
   background-color: #353535;
   color: #ffffff;
   height: 200px;
+  /*mise ne place des liens */
 }
 @media screen and (min-width: 1024px) {
   footer {
@@ -406,6 +418,7 @@ body {
   background-color: #ffffff;
 }
 
+/* mise ne place du header et du logo sur la page d'accueil*/
 #header-logo {
   height: 63px;
   display: flex;
@@ -419,6 +432,7 @@ body {
   margin-right: 45%;
 }
 
+/* fleche de retour sur la page d'accueil */
 .fa-arrow-left {
   color: black;
 }
@@ -430,6 +444,7 @@ body {
   margin-bottom: 12px;
 }
 
+/* img sur les pages restaurants */
 #resto-img-delice {
   background-image: url(../Images_et_textes_Ohmyfood/#resto-img-delice);
   background-size: cover;
@@ -462,6 +477,7 @@ body {
   width: 100%;
 }
 
+/* mise en place générale des pages de restaurants */
 #main-resto {
   position: relative;
   background-color: #F6F6F6;
@@ -494,6 +510,7 @@ body {
   margin-left: 13px;
 }
 
+/* titre des restaurants : textes*/
 #title-resto {
   display: flex;
   justify-content: space-between;
@@ -511,6 +528,8 @@ body {
   margin-bottom: 0;
 }
 
+/* Animation de la page de chargement*/
+/* Animation et position de la page */
 .loader-container {
   position: fixed;
   top: 0;
@@ -536,6 +555,7 @@ body {
     display: none;
   }
 }
+/* Apparence et animation des lettres  */
 .lettre {
   font-size: 35px;
   font-weight: 700;
@@ -639,6 +659,7 @@ body {
 }
 
 /*********** coeur ****************/
+/* postion de l'icone du checkbox */
 .heart input[type=checkbox] {
   position: relative;
   width: 16px;
@@ -646,6 +667,7 @@ body {
   opacity: 0;
 }
 
+/* coeur avant le clique + animation*/
 .heart .fa-solid {
   font-weight: 200;
   font-size: 23px;
@@ -671,6 +693,7 @@ body {
     opacity: 1;
   }
 }
+/* coeur lors du clique */
 .heart input[type=checkbox]:checked + label .fa-heart {
   font-weight: 900;
   -webkit-background-clip: text;
@@ -681,6 +704,7 @@ body {
 }
 
 /******************** Ajout plats commande **************/
+/* masuqer checkbox + position du label et du curseur */
 #main-resto article {
   position: relative;
   overflow: hidden;
@@ -698,7 +722,7 @@ body {
   z-index: 2;
 }
 
-/*  */
+/* mise en place du cadre de la validtion du menu + animation*/
 .progress {
   position: absolute;
   right: 0;

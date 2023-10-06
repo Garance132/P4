@@ -6,6 +6,8 @@ body {
     background-color: $color-white;
 }
 
+/* mise ne place du header et du logo sur la page d'accueil*/
+
 #header-logo {
     height: 63px;
     display: flex;
@@ -23,6 +25,8 @@ margin-left: 17px;
     
 }
 
+/* fleche de retour sur la page d'accueil */
+
 .fa-arrow-left{
     color: black;
  }
@@ -34,6 +38,8 @@ margin-left: 17px;
     margin-left: 13px;
     margin-bottom: 12px;
 }
+
+/* img sur les pages restaurants */
 
 #resto-img-delice{
    background-image: url(../Images\_et\_textes\_Ohmyfood/#resto-img-delice);
@@ -66,6 +72,8 @@ margin-left: 17px;
     height: 275px;
     width: 100%;
 }
+
+/* mise en place générale des pages de restaurants */
 
 #main-resto {
     position: relative;
@@ -101,6 +109,8 @@ margin-left: 17px;
         margin-left: 13px;
     }
 }
+
+/* titre des restaurants : textes*/
 
 #title-resto {
     display: flex;

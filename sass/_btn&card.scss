@@ -4,6 +4,7 @@
     align-items: center;
 }
 
+/* bouton 'explorer nos restaurants */
 
 .btn__intro {
     border: none;
@@ -27,6 +28,8 @@
 }
 
 
+/* Ajout d'lement du bouton restaurant par rapport au bouton intro */
+
 
 .btn__resto {
     margin: 40px 94.5px 10px;
@@ -41,6 +44,8 @@ ul {
     padding: 0%;
     margin: 26px 20px 0px 20px;
 }
+
+/* card de la partie fonctionnement */
 
 #fonctionnement ul p {
 
@@ -91,6 +96,8 @@ li.card-fonction {
     }
 
 }
+
+/* carte des restaurants sur la page d'accueil*/
 
 #restaurants #resto-card{
     display: flex;

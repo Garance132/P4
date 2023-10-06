@@ -1,3 +1,7 @@
+/* Animation de la page de chargement*/
+
+/* Animation et position de la page */
+
 .loader-container {
     position: fixed;
     top: 0;
@@ -24,6 +28,8 @@
         display: none;
     }
 }
+
+/* Apparence et animation des lettres  */
 
 .lettre {
     font-size: 35px;
@@ -112,6 +118,8 @@
 
 /************ page restaurant chargement ****************/
 
+
+
 @keyframes progress-page {
     0% {
         opacity: 0;
@@ -140,6 +148,8 @@
 
 /*********** coeur ****************/
 
+/* postion de l'icone du checkbox */
+
 .heart input[type="checkbox"] {
     position: relative;
     width: 16px;
@@ -147,6 +157,7 @@
     opacity: 0;
 }
 
+/* coeur avant le clique + animation*/
 
 
 .heart .fa-solid {
@@ -177,6 +188,8 @@
     }
 }
 
+/* coeur lors du clique */
+
 .heart input[type="checkbox"]:checked+label .fa-heart {
 
     font-weight: 900;
@@ -189,6 +202,7 @@
 
 /******************** Ajout plats commande **************/
 
+/* masuqer checkbox + position du label et du curseur */
 
 #main-resto article {
     position: relative;
@@ -209,7 +223,7 @@
 
 }
 
-/*  */
+/* mise en place du cadre de la validtion du menu + animation*/
 
 .progress {
     position: absolute;
