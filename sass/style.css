@@ -766,10 +766,10 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: -15px;
   bottom: 0;
   width: 60px;
   height: 72px;
-  background: rgba(255, 255, 255, 0.851);
+  background: rgba(255, 255, 255, 0.775);
   z-index: -1;
 }/*# sourceMappingURL=style.css.map */
