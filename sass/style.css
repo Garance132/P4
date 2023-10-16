@@ -85,9 +85,6 @@ body {
   background: #ffffff;
   padding: 50px 0px;
 }
-#fonctionnement nav {
-  width: 75%;
-}
 
 /* mise en place de la partie restaurant */
 #restaurants {
@@ -106,6 +103,17 @@ img {
      object-fit: cover;
 }
 
+.text-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ul {
+  margin: 0%;
+  padding: 0%;
+}
+
 .text {
   margin: 0%;
   width: auto;
@@ -118,8 +126,8 @@ a {
 }
 
 .text__h2 {
-  width: 75%;
   padding-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 #intro .text,
@@ -163,9 +171,6 @@ footer .liens {
 }
 footer .liens div {
   display: flex;
-}
-footer .liens i {
-  margin: 0px 16px 0px 0px;
 }
 @media screen and (min-width: 1024px) {
   footer .liens i {
@@ -212,18 +217,7 @@ footer .liens .text {
 
 /* Ajout d'lement du bouton restaurant par rapport au bouton intro */
 .btn__resto {
-  margin: 40px 94.5px 10px;
-  width: 45%;
-}
-@media screen and (min-width: 1024px) {
-  .btn__resto {
-    margin: 40px 25%;
-  }
-}
-
-ul {
-  padding: 0%;
-  margin: 26px 20px 0px 20px;
+  width: 100%;
 }
 
 /* card de la partie fonctionnement */
@@ -270,15 +264,14 @@ li.card-fonction .fa-xs {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 75%;
 }
 @media screen and (min-width: 1024px) {
   #restaurants #resto-card {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 150px;
+    -moz-column-gap: 140px;
+         column-gap: 140px;
   }
 }
 
@@ -288,11 +281,6 @@ li.card-fonction .fa-xs {
   height: 251px;
   border-radius: 15px;
   position: relative;
-}
-@media screen and (min-width: 1024px) {
-  .card {
-    margin-bottom: -50px;
-  }
 }
 .card img {
   width: 100%;
@@ -319,7 +307,7 @@ li.card-fonction .fa-xs {
 }
 @media screen and (min-width: 1024px) {
   .card-f {
-    width: 335px;
+    width: 100%;
   }
 }
 
@@ -346,9 +334,7 @@ i {
 @media screen and (min-width: 1024px) {
   #fonctionnement ul {
     display: flex;
-    flex-direction: row;
     gap: 44px;
-    flex-wrap: wrap;
   }
 }
 /* mise en place du footer */
@@ -423,13 +409,11 @@ body {
   height: 63px;
   display: flex;
   align-items: center;
-  gap: 41px;
-  margin-left: 17px;
   justify-content: space-between;
+  margin-left: 17px;
 }
-
-#header-logo .header-logo {
-  margin-right: 45%;
+#header-logo img {
+  margin: auto;
 }
 
 /* fleche de retour sur la page d'accueil */
@@ -488,7 +472,7 @@ body {
 @media screen and (min-width: 1024px) {
   #main-resto {
     margin: -30px 193px 0px;
-    padding: 81px 210px;
+    padding: 10%;
   }
 }
 #main-resto article {
@@ -643,19 +627,21 @@ body {
     opacity: 1;
   }
 }
-#main-resto .view:nth-child(1) {
-  animation: progress-page 1s linear;
-  animation-delay: 0.4s;
+#main-resto .view {
+  opacity: 0;
+  animation: progress-page 2s forwards;
 }
 
 #main-resto .view:nth-child(2) {
-  animation: progress-page 1s linear;
-  animation-delay: 0.6s;
+  animation-delay: 0.75s;
 }
 
 #main-resto .view:nth-child(3) {
-  animation: progress-page 1s linear;
-  animation-delay: 0.8s;
+  animation-delay: 1.25s;
+}
+
+#main-resto .view:nth-child(4) {
+  animation-delay: 2s;
 }
 
 /*********** coeur ****************/
@@ -672,7 +658,8 @@ body {
   font-weight: 200;
   font-size: 23px;
   color: #7e7e7e;
-  padding: 0px 17px 0px 37px;
+  padding: 0px 17px 0px 0px;
+  z-index: 2;
 }
 .heart .fa-solid:active {
   font-weight: 900;
@@ -760,16 +747,30 @@ body {
 
 .checkbox:checked ~ .para-menu .prix-resto {
   transform: translateX(-59px);
-  /* Ajout fond blanc derrière le prix */
 }
-.checkbox:checked ~ .para-menu .prix-resto:before {
+
+.para-menu p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.para-menu p:before {
   content: "";
-  position: absolute;
-  top: 0;
-  right: -15px;
-  bottom: 0;
-  width: 60px;
-  height: 72px;
-  background: rgba(255, 255, 255, 0.775);
-  z-index: -1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prix-resto {
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.checkbox:checked ~ .para-menu p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 89px);
 }/*# sourceMappingURL=style.css.map */

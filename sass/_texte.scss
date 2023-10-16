@@ -11,9 +11,8 @@ a {
 
 .text__h2 {
     @extend %police-h2;
-    width: 75%;
     padding-bottom: 15px;
-
+    margin-bottom: 30px;
 }
 
 #intro .text,
@@ -62,7 +61,7 @@ footer .liens {
     }
 
     i {
-        margin: 0px 16px 0px 0px;
+        
 
         @media screen and (min-width:1024px){
             margin: 0px 5px;

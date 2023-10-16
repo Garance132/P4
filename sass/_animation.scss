@@ -125,24 +125,30 @@
         opacity: 0;
     }
 
+
     100% {
         opacity: 1;
     }
 }
 
-#main-resto .view:nth-child(1) {
-    animation: progress-page 1s linear;
-    animation-delay: 0.4s;
+#main-resto .view {
+    opacity: 0;
+    animation: progress-page 2s forwards;
 }
 
 #main-resto .view:nth-child(2) {
-    animation: progress-page 1s linear;
-    animation-delay: 0.6s;
+    animation-delay: 0.75s;
+
 }
 
 #main-resto .view:nth-child(3) {
-    animation: progress-page 1s linear;
-    animation-delay: 0.8s;
+    animation-delay: 1.25s;
+
+}
+
+#main-resto .view:nth-child(4) {
+    animation-delay: 2s;
+
 }
 
 
@@ -164,7 +170,8 @@
     font-weight: 200;
     font-size: 23px;
     color: #7e7e7e;
-    padding: 0px 17px 0px 37px;
+    padding: 0px 17px 0px 0px;
+    z-index: 2;
 
     &:active {
         font-weight: 900;
@@ -206,20 +213,21 @@
 
 #main-resto article {
     position: relative;
-   overflow: hidden;
+    overflow: hidden;
 
-   .checkbox {
-    display: none;
-   }
-   .label {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-}
+    .checkbox {
+        display: none;
+    }
+
+    .label {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
 
 }
 
@@ -240,7 +248,7 @@
     transition: width 0.3s ease;
     font-size: 20px;
 
-    i { 
+    i {
         color: $color-new;
         border: $color-white 3px;
         border-radius: 50%;
@@ -251,32 +259,48 @@
     }
 }
 
-.prix-resto{
+
+
+.prix-resto {
     z-index: 2;
     transition: transform 0.3s ease;
     height: 100%;
 }
 
-.checkbox:checked~.progress{
-    width:59px;
+.checkbox:checked~.progress {
+    width: 59px;
 }
 
-.checkbox:checked~.para-menu .prix-resto{
+.checkbox:checked~.para-menu .prix-resto {
     transform: translateX(-59px);
+}
 
+ .para-menu p{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
-    /* Ajout fond blanc derrière le prix */
     &:before {
         content: '';
-        position: absolute;
-        top: 0;
-        right: -15px;
-        bottom: 0;
-        width: 60px;
-        height: 72px;
-        background: rgba(255, 255, 255, 0.775);
-        z-index: -1;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
- }
+}
 
+.prix-resto{
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.checkbox:checked~.para-menu p {
+
+   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 89px);
+}
 

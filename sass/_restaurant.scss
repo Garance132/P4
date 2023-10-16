@@ -12,18 +12,15 @@ body {
     height: 63px;
     display: flex;
     align-items: center;
-gap: 41px;
+    justify-content: space-between;
+    
 margin-left: 17px;
 
-    justify-content: space-between;
-
+img{
+    margin: auto;
+}
 }
 
-#header-logo .header-logo{
-
-        margin-right: 45% ;
-    
-}
 
 /* fleche de retour sur la page d'accueil */
 
@@ -84,7 +81,7 @@ margin-left: 17px;
 
     @media screen and (min-width:1024px) {
         margin: -30px 193px 0px;
-        padding: 81px 210px;
+        padding: 10%;
     }
 
     article {

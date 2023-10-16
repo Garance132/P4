@@ -32,17 +32,7 @@
 
 
 .btn__resto {
-    margin: 40px 94.5px 10px;
-    width: 45%;
-
-    @media screen and (min-width:1024px){
-        margin: 40px 25%;
-    }
-}
-
-ul {
-    padding: 0%;
-    margin: 26px 20px 0px 20px;
+    width: 100%;
 }
 
 /* card de la partie fonctionnement */
@@ -103,14 +93,13 @@ li.card-fonction {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 75%;
+    
 
     @media screen and (min-width:1024px) {
-            display: flex;
-            flex-direction: row;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 150px;
+            column-gap: 140px;
     }
 }
 
@@ -121,10 +110,6 @@ li.card-fonction {
     border-radius: 15px;
     position: relative;
 
-    @media screen and (min-width:1024px) {
-
-            margin-bottom: -50px;
-    }
 
     img {
         width: 100%;
@@ -152,7 +137,7 @@ li.card-fonction {
         border-radius: 0px 0px 15px 15px;
 
         @media  screen and (min-width:1024px) {
-            width: 335px;
+            width: 100%;
         }
     }
 
@@ -180,9 +165,7 @@ li.card-fonction {
 @media screen and (min-width:1024px) {
     #fonctionnement ul{
         display: flex;
-        flex-direction: row;
         gap: 44px;
-        flex-wrap: wrap;
     }
 }
 
