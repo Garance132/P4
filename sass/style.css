@@ -773,4 +773,25 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(100% - 89px);
+}
+
+h3 {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+h3:before {
+  content: "";
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.checkbox:checked ~ h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 89px);
 }/*# sourceMappingURL=style.css.map */
